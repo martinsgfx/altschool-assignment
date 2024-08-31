@@ -1,0 +1,435 @@
+body {
+  background-color: white;
+  margin: 0;
+  margin-top: 0;
+  font-family: "SUSE", sans-serif;
+}
+
+/* Navigation */
+
+.nav-bar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 25px 0px;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-links li {
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #09155e;
+  text-decoration: none;
+  display: block;
+  padding: 0 50px;
+}
+
+a:hover {
+  color: #1e39c7;
+}
+
+/* Main Container */
+
+.form-container {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  margin-top: 31px;
+}
+
+/* Left Container */
+
+.left-container {
+  text-align: center;
+  background-color: #fffcf8;
+  padding: 50px 100px 0 100px;
+}
+
+.left-container img {
+  justify-self: center;
+  padding: 0px 50px;
+  width: 70%;
+}
+
+.left-container h1 {
+  font-size: 48px;
+  text-align: center;
+  line-height: 72px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact {
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  color: #0367f2;
+  padding: 0px 5px;
+}
+
+.fa-instagram {
+  color: #0367f2;
+  padding: 0px 5px;
+}
+
+.fa-facebook {
+  color: #0367f2;
+  padding: 0px 5px;
+}
+
+.fa-linkedin {
+  color: #0367f2;
+  padding: 0px 5px;
+}
+
+.left-container p {
+  padding: 0px 50px;
+  text-align: center;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+/* Right Container  */
+
+.sign-in {
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: right;
+  font-weight: bold;
+  width: 100%;
+}
+
+.sign-in a {
+  text-decoration: none;
+}
+
+.right-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 80%;
+}
+
+.form-page {
+  padding: 50px 0;
+}
+
+.form-page h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0px;
+}
+
+.form-page p {
+  color: #868686;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+
+/* First and Last Names */
+
+#names {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+}
+
+.fname {
+  display: grid;
+}
+
+.lname {
+  display: grid;
+}
+
+label {
+  font-size: 16px;
+  padding: 30px 10px 10px 10px;
+}
+
+input {
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Input Focus Styling */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Input Placeholder Styling */
+input::placeholder {
+  color: #aaa;
+}
+
+/* Gender and Date of Birth */
+
+#gender-dob {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+}
+
+.gender {
+  display: grid;
+}
+
+.dob {
+  display: grid;
+}
+
+select {
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Email and Phone Number */
+
+#email-no {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+}
+
+.mail {
+  display: grid;
+}
+
+.phone {
+  display: grid;
+}
+
+/* Country and State */
+
+#country-state {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+}
+
+.country {
+  display: grid;
+}
+
+.state {
+  display: grid;
+}
+
+/* Referral */
+
+#ref {
+  display: grid;
+}
+
+/* Passwords */
+
+#pwords {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+  padding: 0px;
+}
+
+.p-word-1 {
+  display: grid;
+}
+
+.p-word-2 {
+  display: grid;
+}
+
+/* Form Footer */
+
+p.form-footer {
+  text-align: center;
+  padding: 50px 10px 20px 10px;
+}
+
+/* Button */
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #7376c6;
+  box-shadow: #7376c6;
+}
+
+footer {
+  text-align: right;
+  padding-right: 50px;
+  background-color: white;
+}
+
+footer p {
+  font-size: small;
+  padding: 10px 0px;
+}
+
+/* Styles for Phone and Tablet */
+
+@media (max-width: 768px) {
+  /* Navbar Media Query */
+
+  .nav-bar {
+    font-size: 16px;
+    padding: 0;
+  }
+  .nav-links {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 0 20px;
+  }
+
+  /* Forms Media Query */
+
+  .form-container {
+    grid-template-columns: 100%;
+    align-content: center;
+    margin-top: 80px;
+  }
+
+  .left-container {
+    display: none;
+    overflow: hidden;
+  }
+
+  .sign-in {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .right-container {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .form-page {
+    padding: 20px 0;
+  }
+
+  .form-page h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 0px 15px;
+  }
+
+  #names,
+  #gender-dob,
+  #email-no,
+  #country-state,
+  #pwords {
+    grid-template-columns: 100%;
+    column-gap: 0;
+  }
+
+  .form-page p {
+    padding: 5px 15px 10px 15px;
+  }
+
+  form {
+    padding: 0px 15px;
+  }
+
+  label {
+    padding: 15px 5px 5px 5px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 15px;
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  button {
+    border-radius: 5px;
+  }
+
+  p.form-footer {
+    padding: 30px 5px 10px 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  input,
+  select,
+  button {
+    padding: 15px;
+    font-size: 12px;
+    max-width: 100%;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .form-page h1 {
+    font-size: 24px;
+  }
+
+  .form-page p {
+    font-size: smaller;
+  }
+
+  p.form-footer {
+    font-size: smaller;
+  }
+
+  footer {
+    text-align: center;
+    padding-right: 0px;
+    background-color: white;
+  }
+
+  footer p {
+    font-size: small;
+    padding: 10px 0px;
+  }
+}

@@ -1,0 +1,163 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+  margin-top: 0;
+  font-family: "SUSE", sans-serif;
+}
+
+/* Navigation */
+
+.nav-bar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 25px 0px;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-links li {
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #09155e;
+  text-decoration: none;
+  display: block;
+  padding: 0 50px;
+}
+
+a:hover {
+  color: #1e39c7;
+}
+
+.sec-content {
+  padding: 100px;
+  display: grid;
+}
+
+.table-summary {
+  text-align: center;
+  font-size: 24px;
+  color: #09155e;
+}
+
+/* Tables */
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #1e39c7;
+}
+
+th {
+  background-color: #1e39c7;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.name-of-school {
+  color: white;
+  background-color: #09155e;
+}
+
+footer {
+  text-align: right;
+  padding-right: 50px;
+  background-color: aliceblue;
+}
+
+footer p {
+  font-size: small;
+  padding: 10px 0px;
+}
+
+@media (max-width: 768px) {
+  /* Navbar Media Query */
+
+  .nav-bar {
+    font-size: 16px;
+    padding: 0;
+  }
+  .nav-links {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 0 20px;
+  }
+
+  /* Tables Media Query */
+
+  table {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  th:nth-child(2),
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(5) {
+    display: none;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  th {
+    display: block;
+  }
+
+  th,
+  td {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 0.5px solid #1e39c7;
+  }
+
+  .empty-cell {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    padding-right: 0px;
+    background-color: aliceblue;
+  }
+
+  footer p {
+    font-size: small;
+    padding: 10px 0px;
+  }
+}

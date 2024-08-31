@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/forms.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="./index.html">About Me</a></li>
+        <li><a href="#">Form</a></li>
+        <li><a href="./table.html">Table</a></li>
+        <li><a href="./media.html">Media</a></li>
+      </ul>
+    </nav>
+
+    <section class="form-container">
+      <section class="left-container">
+        <img src="/img/signup.png" alt="image" />
+        <h1>
+          Learn highly sought <br />
+          after skills without <br />
+          hassle.
+        </h1>
+        <div class="contact">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <p>
+          Tel: 0800ALTSCHOOL <br />
+          <strong>©2024 AltSchool Africa. All rights reserved.</strong>
+        </p>
+      </section>
+
+      <section class="right-container">
+        <p class="sign-in">Already an AltSchooler? <a href="#">Sign In!</a></p>
+
+        <div class="form-page">
+          <h1>Sign Up</h1>
+          <p>Take the next steps to apply at AltSchool Africa</p>
+
+          <form action="/submit" method="POST">
+            <!-- First and Last Name -->
+
+            <div id="names">
+              <div class="fname">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Enter First Name"
+                  required
+                />
+              </div>
+
+              <div class="lname">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Enter Last Name"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Gender -->
+
+            <div id="gender-dob">
+              <div class="gender">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+
+              <div class="dob">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+              </div>
+            </div>
+
+            <!-- Email and Phone Number -->
+
+            <div id="email-no">
+              <div class="mail">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Email Address"
+                  required
+                />
+              </div>
+
+              <div class="phone">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="08012345678"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Country and State -->
+
+            <div id="country-state">
+              <div class="country">
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                  <option value="">Select your country</option>
+                  <option value="Nigeria">Nigeria</option>
+                </select>
+              </div>
+
+              <div class="state">
+                <label for="state">State/ City of Residence</label>
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="Enter your state of residence"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- How did you hear about us -->
+
+            <div id="ref">
+              <label for="referral">How did you hear about us?</label>
+              <select name="referral" id="referral" required>
+                <option value="">Select Channel</option>
+                <option value="Linked In">Linked In</option>
+                <option value="Youtube">Youtube</option>
+                <option value="Friend">Friend</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Billboard">Billboard</option>
+                <option value="Sales Officer">Sales Officer</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+
+            <!-- Passwords -->
+
+            <div id="pwords">
+              <div class="p-word-1">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter Password"
+                  required
+                />
+              </div>
+
+              <div class="p-word-2">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  placeholder="Enter Password Again"
+                  required
+                />
+              </div>
+            </div>
+
+            <p class="form-footer">
+              By clicking continue, I agree to
+              <a href="https://www.altschoolafrica.com/terms-and-conditions"
+                >Terms of Use</a
+              >
+              and acknowledge that I have read the
+              <a href="https://www.altschoolafrica.com/privacy-policy"
+                >Privacy Policy</a
+              >
+            </p>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <p>© 2024, Martins Akinnuwesi.</p>
+    </footer>
+  </body>
+</html>

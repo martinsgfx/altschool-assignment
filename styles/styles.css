@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
+}
+
+/* Navigation */
+
+.nav-bar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-links li {
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #09155e;
+  text-decoration: none;
+  display: block;
+  padding: 0 50px;
+}
+
+a:hover {
+  color: #1e39c7;
+}
+
+/* Header */
+
+header {
+  padding: 200px;
+  background-image: linear-gradient(to right, #1e39c7, #09155e);
+  align-content: center;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  margin: 0;
+}
+
+header p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Biography */
+
+.bio {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 50px;
+}
+
+.bio h2 {
+  margin: 0;
+  text-align: center;
+  padding: 20px 25px 25px;
+  font-size: 40px;
+}
+
+.bio p {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #09155e;
+}
+
+/* Goals */
+
+.goals {
+  padding: 50px;
+  background-image: linear-gradient(to right, #1e39c7, #09155e);
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+  padding: 20px 25px 25px;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.goal-list {
+  padding: 0 200px;
+  text-align: justify;
+  list-style-type: none;
+  font-size: 18px;
+  color: white;
+  line-height: 1.6rem;
+}
+
+.goal-list li {
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+}
+
+/* Footer */
+
+footer {
+  padding: 25px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+footer p {
+  text-align: right;
+  font-size: small;
+  padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  /* Navbar Query */
+
+  .nav-bar {
+    font-size: 16px;
+    padding: 0;
+  }
+  .nav-links {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 0 20px;
+  }
+
+  /* Header Query */
+
+  header {
+    padding: 150px 100px 100px 100px;
+  }
+
+  header h1 {
+    font-size: 80px;
+  }
+
+  /* Biogragphy Query */
+
+  .bio h2 {
+    margin: 0;
+    text-align: center;
+    padding: 10px 18px 18px;
+    font-size: 32px;
+  }
+
+  .bio p {
+    text-align: justify;
+    padding: 0 10px;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* Goals Query */
+
+  h3 {
+    margin: 0;
+    text-align: center;
+    padding: 10px 15px 15px;
+    font-size: 32px;
+    color: aliceblue;
+  }
+
+  .goal-list {
+    padding: 0 10px;
+    text-align: center;
+    text-justify: inter-word;
+    list-style-type: none;
+    font-size: 18px;
+    color: white;
+    line-height: 1.6rem;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 30px 10px;
+    background-color: white;
+    text-align: center;
+  }
+
+  footer a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: small;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 0;
+  }
+}
